@@ -1,0 +1,29 @@
+.search{
+
+    position: relative;
+    display: flex;
+
+    &__icon{
+        position: absolute;
+        top: 16px;
+        left: 13px;
+    }
+    &__input{        
+        width: 312px;
+        border-radius: 4px 0px 0px 4px;
+        padding: 12px 18px 12px 44px;
+        border: 1px solid $gray-1;
+        @include style-text(12px);
+
+        &::placeholder{
+            @include style-text(14px, $gray-5);
+        }
+    }
+    &__button{
+        @include style-text(14px, $white, $weight: 600);
+        background: #00B207;
+        padding: 14px 24px;
+        border-radius: 0px 4px 4px 0px;
+        border: none;
+    }
+}
